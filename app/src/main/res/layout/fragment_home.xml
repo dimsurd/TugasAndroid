@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pages.HomeFragment"
+    android:background="#F6F6F7">
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/menu"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+    <ImageView
+        android:id="@+id/ivNotif"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/notification"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        app:layout_constraintRight_toRightOf="@id/ivNotif"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/user"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:text="Hai,Admin !"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMenu"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="30dp"
+        android:text="Discover Events"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tvDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivBar"
+        android:layout_marginTop="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscover"
+        android:src="@drawable/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBar"
+        android:src="@drawable/event1"
+        android:id="@+id/ivEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
